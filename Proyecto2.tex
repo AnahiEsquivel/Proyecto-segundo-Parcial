@@ -1,0 +1,101 @@
+\documentclass[12pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[spanish]{babel}
+\usetheme{Berlin}
+\usepackage{graphicx}
+\usepackage{ragged2e}
+\begin{document}
+	\author{Equipo 2}
+	\title{Segundo Proyecto Parcial}
+	\subtitle{Crecimiento Bacteriano y Métodos Numéricos}
+	%\logo{}
+	\institute{Tecnológico de Monterrey}
+	\date{02 de noviembre del 2021}
+	\subject{Profesor Adolfo Centeno}
+	\setbeamercovered{transparent}
+	%\setbeamertemplate{navigation symbols}{}
+	\begin{frame}[plain]
+		\maketitle
+	\end{frame}
+     \begin{frame}
+    	\frametitle{Investigación: 1 Problema}
+    	\includegraphics[width=10cm, height=8cm]{investigacionn.png}
+    \end{frame}
+    \begin{frame}
+	\frametitle{Investigación:2 Problema}
+	\includegraphics[width=10cm, height=8cm]{investigación.png}
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Introducción}
+    	\justify{ Este proyecto se adaptará al tema de crecimiento bacteriano, el cual se define como el incremento en número de bacterias, existen varios factores que pueden influir en dicho crecimiento, como: los nutrientes, humedad, temperatura, entre otros, por lo que se utilizarán distintos métodos y teoremas para resolver problemas de crecimiento bacteriano. Así mismo aplicaremos un método de sistemas de ecuaciones no lineales.}
+   \end{frame}
+    \begin{frame}
+    	\frametitle{Objetivos}
+    	
+    	\justify{General:
+    		Aplicar los métodos vistos en clase en un tema relacionado a la carrera de ingeniería en biotecnología. 
+    		
+    		Específicos:
+    		Aplicar un sistema de ecuaciones lineales como: Cramer, Jacobi, Seidel, eliminación, Gauss Jordan, seleccionando 3 métodos de estos, para la resolución de un problema de crecimiento bacteriano.
+    		
+    		Aplicar un sistema de ecuaciones NO lineales como Newton Raphson, para la resolución de un problema de crecimiento bacteriano.}
+   \end{frame}
+   \begin{frame}
+   	\frametitle{Método de Newton Raphson: Sistema de ecuaciones NO lineales}
+   	\justify{Problema: La concentración de bacterias en un lago disminuye de acuerdo con la siguiente ecuación: c=75e-1.5 t+2000e-0.075 t, Determinar el tiempo requerido para que la concentración de bacterias se reduzca a 15 (Alejandra, H., 2020).}
+   	\end{frame}
+    \begin{frame}
+    	\frametitle{Graficos Excel y Matlab}
+    	\includegraphics[width=10cm, height=8cm]{parcial.png}
+    \end{frame}
+\begin{frame}
+	\frametitle{Graficos Excel y Matlab}
+	\includegraphics[width=10cm, height=8cm]{mat.png}
+\end{frame}
+   \begin{frame}
+   	\frametitle{Regla de Cramer}
+   	\justify{Tres especies bacterianas diferentes se cultivan en un plato y se alimentan de tres nutrientes. Cada individuo de la especie I consume una unidad de cada uno de los primeros y segundos nutrientes y 2 unidades del tercer nutriente. Cada individuo de la especie II consume 2 unidades del primer nutriente y 2 del tercer nutriente. Cada individuo de la especie III consume 2 unidades del primer nutriente, 3 unidades del segundo nutriente y 5 unidades del tercer nutriente. Si al cultivo se le dan 5300 unidades del primer nutriente, 6900 unidades del segundo nutriente y 12,200 unidades del tercer nutriente, ¿Cuánto crecimiento bacteriano de cada especie se pueden mantener para que se consuman todos los nutrientes?} 
+   \end{frame}
+   \begin{frame}
+   	\frametitle{Resultado: Gráfica}
+   	\includegraphics[width=10cm, height=8cm]{cramer.png}
+   \end{frame}
+ \begin{frame}
+	\frametitle{Método Jacobi} 
+	\justify{Una fábrica de quesos desea someter a pruebas sus cultivos de Penicillium roqueforti con el objetivo de reducir el tiempo de incubación del cultivo para introducirlo al queso con mayor rapidez; en busca de un cultivo con el menor tiempo duplicación y mayor crecimiento exponencial para sus quesos se cultiva in vitro  en tres placas petri con diferentes tratamientos. A las 24 horas de incubación se hizo un conteo celular de los tratamientos y se se obtuvieron  370 UFC en la placa con tratamiento 1, 420 UFC en la plaza con tratamiento 2 y 290 UFC en placa con tratamiento 3, ¿Qué factor de crecimiento tiene mayor influencia en el crecimiento bacteriano de P. roqueforti?}
+\end{frame}
+\begin{frame}
+	\frametitle{Resultado: Gráfica}
+	\includegraphics[width=10cm, height=8cm]{proyectoo.png}
+\end{frame}
+   \begin{frame}
+   	\frametitle{Método Gauss-jordan} 
+   	\justify{Una fábrica de quesos desea someter a pruebas sus cultivos de Penicillium roqueforti con el objetivo de reducir el tiempo de incubación del cultivo para introducirlo al queso con mayor rapidez; en busca de un cultivo con el menor tiempo duplicación y mayor crecimiento exponencial para sus quesos se cultiva in vitro  en tres placas petri con diferentes tratamientos}
+   \end{frame}
+ \begin{frame}
+	\frametitle{Método Gauss-jordan} 
+	\justify{La misma cepa hasta llegar a una concentración de 1*10 a la 9 UFC/gr: el tratamiento 1 consiste en 3 dosis del f.c. A (factor de crecimiento), 1 dosis del f.c. B y 2 dosis del f.c. C; el tratamiento 2 consiste en 2 dosis del f.c. A (factor de crecimiento), 3 dosis del f.c. B y 2 dosis del f.c. C y el tratamiento 3 consiste en 1 dosis del f.c. A (factor de crecimiento), 2 dosis del f.c. B y 3 dosis del f.c. C. A las 24 horas de incubación se hizo un conteo celular de los tratamientos y se se obtuvieron  370 UFC en la placa con tratamiento 1, 420 UFC en la plaza con tratamiento 2 y 290 UFC en placa con tratamiento 3, ¿Qué factor de crecimiento tiene mayor influencia en el crecimiento bacteriano de P. roqueforti?}
+\end{frame}
+ \begin{frame}
+ 	\frametitle{Resultados}
+ 	\includegraphics[width=10cm, height=8cm]{ultima.png}
+ \end{frame}
+   \begin{frame}
+   	\frametitle{Conclusiones} 
+   	\justify{ Cramer: Al realizar una comparación uno a uno entre la resolución del problema con dos diferentes métodos de resolución (Excel/ Matlab), se obtienen los resultados en 0 correspondientes a las variables X,Y,Z. De igual manera, al realizar el despeje correspondiente a las variables se obtienen los resultados del crecimiento bacteriano correspondiente a las unidades de sustrato bacteriológico usado.}
+   \end{frame}
+\begin{frame}
+	\frametitle{Conclusiones} 
+	\justify{Jacobi:En conclusión es posible observar la congruencia entre ambas herramientas utilizadas para resolver el problema por el método de Jacobi, ambas coinciden que el factor de crecimiento con mayor inferencia en el crecimiento bacteriano es el f.c. a que corresponde a la variable x; en ambos modelos hay congruencia con el método empleado ya que la matriz corresponde a una matriz diagonal dominante.}
+\end{frame}
+\begin{frame}
+	\frametitle{Conclusiones}
+	\justify{Este método, no nos permite  determinar de manera eficiente el crecimiento bacteriano, ya que su objetivo principal es calcular matrices inversas para llegar a una matriz diagonal, esto lo podemos corroborar mediante el cotejamiento de los resultados obtenidos tanto en excel como en matlab y que nos demuestre lo discordante que son.}
+\end{frame} 
+\begin{frame}
+	\frametitle{Trello}
+	\includegraphics[width=10cm, height=8cm]{trel.png}
+\end{frame}
+\end{document}
