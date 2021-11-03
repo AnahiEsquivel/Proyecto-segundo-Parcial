@@ -1,0 +1,92 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry} 
+\usepackage{graphicx}
+\usepackage{ragged2e}
+
+\begin{document}
+	\title{Segundo Proyecto Parcial de Métodos Numéricos}
+	\author{Equipo 2}
+	\date{02 de noviembre del 2021}
+	\maketitle
+
+María Fernanda Gutiérrez Ornelas 	A01234243\\
+Alfonso Iván Morales Valverde	    A01562011\\
+Ana Sofia Miranda Jimenez          A01631272\\
+Anahi Esquivel Valenzuela          A01235160\\
+Sergio Eduardo Trejo Olivas 	    A012422091\\
+Marcela Landero Barraza                  A01187873\\
+
+\textbf{Resumen}
+
+Se realizó la solución de distintos métodos numéricos vistos en clase, tanto de ecuaciones lineales como de ecuación no lineal, por medio de la aplicación de Matlab y excel, ésto para problemáticas basadas en el crecimiento bacteriano, en donde en cada uno de los métodos se plantearon  diferentes problemas para su resolución.\\ 
+
+\textbf{Introducción}
+
+Una ecuación lineal es una igualdad matemática entre dos expresiones algebraicas, denominadas miembros, en las que aparecen elementos conocidos y desconocidos (denominados variables), y que involucra solamente sumas y restas de una variable a la primera potencia (ecuación lineal, s.f.). Dicho lo anterior se puede aplicar las ecuaciones lineales a distintas áreas, en este proyecto se adaptará al tema de crecimiento bacteriano, el cual se define como el incremento en el número de bacterias, existen varios factores que pueden influir en dicho crecimiento, como: los nutrientes, humedad, temperatura, entre otros, por lo que se utilizarán distintos métodos y teoremas para resolver problemas de crecimiento bacteriano. Así mismo aplicaremos un método de sistemas de ecuaciones no lineales.\\ 
+
+\textbf{Objetivos}
+
+\textbf{General:}
+-Aplicar los métodos vistos en clase en un tema relacionado a la carrera de ingeniería en biotecnología. 
+
+\textbf{Específicos:}
+-Aplicar un sistema de ecuaciones lineales como: Cramer, Jacobi, Seidel, eliminación, Gauss Jordan, seleccionando 3 métodos de estos, para la resolución de un problema de crecimiento bacteriano.
+
+-Aplicar un sistema de ecuaciones NO lineales como Newton Raphson, para la resolución de un problema de crecimiento bacteriano.\\
+
+
+\textbf{Desarrollo (Métodos y teoremas)}
+
+\textbf{Sistema de ecuaciones NO lineales:}
+Newton Raphson: El método de Newton-Raphson es un método iterativo para poder encontrar raíces de funciones. Este método en teoría puede hallar raíces de funciones lineales y no lineales (Dominic y Castro, 2017).\\
+
+\textbf{Problema:} La concentración de bacterias en un lago disminuye de acuerdo con la siguiente ecuación: c=75e-1.5 t+2000e-0.075 t, Determinar el tiempo requerido para que la concentración de bacterias se reduzca a 15 (Alejandra, H., 2020).\\
+
+Excel:
+\includegraphics[width=10cm, height=8cm]{parcial.png}\\
+\includegraphics[width=10cm, height=8cm]{mat.png}\\
+Conclusión:
+En conclusión se pudo utilizar el método de Newton Raphson en un problema de crecimiento bacteriano, obteniendo como resultado que el tiempo requerido para la disminución de concentración de bacterias es de 4.002 y la gráfica mostrada anteriormente, así mismo se pudo realizar el procedimiento en excel. \\
+
+
+\textbf{Regla de Cramer }
+
+\textbf{Problema:}
+
+Tres especies bacterianas diferentes se cultivan en un plato y se alimentan de tres nutrientes. Cada individuo de la especie I consume una unidad de cada uno de los primeros y segundos nutrientes y 2 unidades del tercer nutriente. Cada individuo de la especie II consume 2 unidades del primer nutriente y 2 del tercer nutriente. Cada individuo de la especie III consume 2 unidades del primer nutriente, 3 unidades del segundo nutriente y 5 unidades del tercer nutriente. Si al cultivo se le dan 5300 unidades del primer nutriente, 6900 unidades del segundo nutriente y 12,200 unidades del tercer nutriente, ¿Cuánto crecimiento bacteriano de cada especie se pueden mantener para que se consuman todos los nutrientes?
+\includegraphics[width=10cm, height=8cm]{cramer.png}\\
+
+\textbf{Conclusión:}
+
+Al realizar una comparación uno a uno entre la resolución del problema con dos diferentes métodos de resolución (Excel/ Matlab), se obtienen los resultados en 0 correspondientes a las variables X,Y,Z. De igual manera, al realizar el despeje correspondiente a las variables se obtienen los resultados del crecimiento bacteriano correspondiente a las unidades de sustrato bacteriológico usado.\\
+
+\textbf{Método Jacobi}
+
+El método de Jacobi es un método iterativo, usado para resolver sistemas de ecuaciones lineales; consiste en construir una sucesión convergente definida interactivamente, donde el límite es la solución del problema.\\  
+
+\textbf{Problema:} Una fábrica de quesos desea someter a pruebas sus cultivos de Penicillium roqueforti con el objetivo de reducir el tiempo de incubación del cultivo para introducirlo al queso con mayor rapidez; en busca de un cultivo con el menor tiempo duplicación y mayor crecimiento exponencial para sus quesos se cultiva in vitro  en tres placas petri con diferentes tratamientos, la misma cepa hasta llegar a una concentración de 1*10 a la 9 UFC/gr: el tratamiento 1 consiste en 3 dosis del f.c. A (factor de crecimiento), 1 dosis del f.c. B y 2 dosis del f.c. C; el tratamiento 2 consiste en 2 dosis del f.c. A (factor de crecimiento), 3 dosis del f.c. B y 2 dosis del f.c. C y el tratamiento 3 consiste en 1 dosis del f.c. A (factor de crecimiento), 2 dosis del f.c. B y 3 dosis del f.c. C. A las 24 horas de incubación se hizo un conteo celular de los tratamientos y se se obtuvieron  370 UFC en la placa con tratamiento 1, 420 UFC en la plaza con tratamiento 2 y 290 UFC en placa con tratamiento 3, ¿Qué factor de crecimiento tiene mayor influencia en el crecimiento bacteriano de P. roqueforti?\\
+\includegraphics[width=10cm, height=8cm]{proyectoo.png}\\
+
+\textbf{Conclusión:}
+
+En conclusión es posible observar la congruencia entre ambas herramientas utilizadas para resolver el problema por el método de Jacobi, ambas coinciden que el factor de crecimiento con mayor inferencia en el crecimiento bacteriano es el f.c. a que corresponde a la variable x; en ambos modelos hay congruencia con el método empleado ya que la matriz corresponde a una matriz diagonal dominante.\\ 
+
+
+\textbf{Metodo Gauss-jordan}\\
+\textbf{Problema:} Una fábrica de quesos desea someter a pruebas sus cultivos de Penicillium roqueforti con el objetivo de reducir el tiempo de incubación del cultivo para introducirlo al queso con mayor rapidez; en busca de un cultivo con el menor tiempo duplicación y mayor crecimiento exponencial para sus quesos se cultiva in vitro  en tres placas petri con diferentes tratamientos, la misma cepa hasta llegar a una concentración de 1*10 a la 9 UFC/gr: el tratamiento 1 consiste en 3 dosis del f.c. A (factor de crecimiento), 1 dosis del f.c. B y 2 dosis del f.c. C; el tratamiento 2 consiste en 2 dosis del f.c. A (factor de crecimiento), 3 dosis del f.c. B y 2 dosis del f.c. C y el tratamiento 3 consiste en 1 dosis del f.c. A (factor de crecimiento), 2 dosis del f.c. B y 3 dosis del f.c. C. A las 24 horas de incubación se hizo un conteo celular de los tratamientos y se se obtuvieron  370 UFC en la placa con tratamiento 1, 420 UFC en la plaza con tratamiento 2 y 290 UFC en placa con tratamiento 3, ¿Qué factor de crecimiento tiene mayor influencia en el crecimiento bacteriano de P. roqueforti?\\
+\includegraphics[width=10cm, height=8cm]{ultima.png}\\
+\textbf{Conclusión: }
+Este método, no nos permite  determinar de manera eficiente el crecimiento bacteriano, ya que su objetivo principal es calcular matrices inversas para llegar a una matriz diagonal, esto lo podemos corroborar mediante el cotejamiento de los resultados obtenidos tanto en excel como en matlab y que nos demuestre lo discordante que son.\\
+
+
+
+\textbf{Referencias}
+
+Ecuación lineal. (s.f.). Recuperado de Ecuación lineal - MiProfe.com
+
+
+
+
+\end{document}
